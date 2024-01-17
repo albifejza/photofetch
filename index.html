@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Photo Fetcher</h1>
-    <button id="loadMoreBtn">Fetch New Photos</button>
-    <div class="photo-container" id="photoContainer"></div>
+    <section class="main-container">
+      <p>Photo Fetcher</p>
+
+      <div class="controls">
+        <div class="checkbox-conatiner">
+          <input type="checkbox" id="toggleSwitch" />
+          <label for="toggleSwitch">Make photos grayscale</label>
+        </div>
+        <button id="loadMoreBtn">Fetch New Photos</button>
+      </div>
+
+      <div class="photo-container" id="photoContainer"></div>
+    </section>
 
     <script src="script.js"></script>
- </body>
+  </body>
 </html>
