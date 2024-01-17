@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const photoContainer = document.getElementById("photoContainer");
     const toggleSwitch = document.getElementById("toggleSwitch");
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
   
     function fetchPhotos() {
       // Clear the existing content of the photo container
@@ -41,12 +42,18 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    
+    // Initial photo fetch
     fetchPhotos();
   
-    // grayscale
+    // Apply grayscale
     toggleSwitch.addEventListener("change", function () {
       applyGrayscale();
+    });
+  
+    // Fetch new photos on button click
+    loadMoreBtn.addEventListener("click", function () {
+      fetchPhotos();
+      applyGrayscale(); // Apply grayscale if the toggle switch is enabled
     });
   });
   
