@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { 
     const photoContainer = document.getElementById("photoContainer");
     const toggleSwitch = document.getElementById("toggleSwitch");
     const loadMoreBtn = document.getElementById("loadMoreBtn");
